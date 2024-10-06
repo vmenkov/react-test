@@ -1,19 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { DndProvider } from 'react-dnd';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
 
-//-- For ver 8.* of this module
-//import  HTML5Backend  from 'react-dnd-html5-backend';
+const container = document.getElementById("root");
 
-//-- For ver 16
-import  { HTML5Backend }  from 'react-dnd-html5-backend';
-import App from './App';
-import './index.css';
+if (!container) {
+  // Unlikely error
+} else {
 
-
-ReactDOM.render(
-    <DndProvider backend={HTML5Backend}>
-      <App />
-    </DndProvider>,
-  document.getElementById('root'),
+const root = createRoot(container);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
+}

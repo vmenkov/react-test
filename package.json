@@ -1,71 +1,36 @@
 {
-    "name": "react-test",
+    "name": "sample-grommet-app",
     "version": "0.1.0",
     "private": true,
-    "engines": {
-        "node": ">=12"
-    },
     "homepage": "./",
-    "scripts": {
-        "build": "react-app-rewired build",
-        "cypress": "cypress open",
-        "eject": "react-scripts eject",
-        "lint": "eslint ./src/**/*.ts*",
-        "lint:css": "stylelint ./**/*.tsx",
-        "start": "react-app-rewired start",
-        "test": "react-app-rewired test --env=jsdom"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged --quiet"
-        }
-    },
-    "lint-staged": {
-        "*.{ts,tsx}": [
-            "prettier --write",
-            "git add"
-        ],
-        "*.{js,jsx}": [
-            "prettier --write",
-            "git add"
-        ],
-        "*.{json,md}": [
-            "prettier --write",
-            "git add"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
     "dependencies": {
-        "grommet": "2.20.0",
-        "grommet-icons": "*",
-        "react": "^17",
-        "react-dnd": "*",
-        "react-dnd-html5-backend": "*",
-        "react-dom": "^17",
-        "react-hot-loader": "*",
-        "react-redux": "^8",
-        "react-use": "*"
+	"grommet": "^2.28.0",
+	"grommet-icons": "^4.8.0",
+	"react": "^18.2.0",
+	"react-dom": "^18.2.0",
+	"react-scripts": "5.0.1",
+	"styled-components": "^5.3.6",
+	"react-use": "^17.5.1",
+	"react-redux": "^9.1.2",
+	"@types/react" : "^18.3.11",
+	"@types/react-dom" : "^18.3.0"
     },
     "devDependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "*",
-        "@types/react-dom": "^18.3.0",
-        "customize-cra": "*",
-        "react-app-rewired": "*"
+	"@babel/plugin-proposal-private-property-in-object": "*"
     },
-    "type": "commonjs",
-    "exports": {
-        "react/jsx-dev-runtime": "react/jsx-dev-runtime.js",
-        "react/jsx-runtime": "react/jsx-runtime.js"
-    }
+    "scripts": {
+	"start": "react-scripts start",
+	"build": "react-scripts build",
+	"test": "react-scripts test",
+	"eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+	"extends": "react-app"
+    },
+    "browserslist": [
+	">0.2%",
+	"not dead",
+	"not ie <= 11",
+	"not op_mini all"
+    ]
 }
