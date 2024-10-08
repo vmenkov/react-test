@@ -72,7 +72,7 @@ const App = () => {
 
 </Box>
     <Box border={{ color: 'pink', size: 'small' }}  >
-     	    <Text>Zone C</Text>
+     	    <Text>Zone C (ver 2024-10-08-a)</Text>
 	       <Box margin={{ top: 'small' }}>
 	       <Text>What would you like the texts in Zone A and Zone B to look like?</Text>
             <Form
