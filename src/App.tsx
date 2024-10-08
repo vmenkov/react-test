@@ -37,7 +37,7 @@ const App = () => {
         <Grid
           fill
           pad="small"
-          rows={['auto', 'min-content', 'min-content']}
+          rows={[`${n1}fr`, `${n2}fr`]}
           columns={['1fr']}
           areas={[
             {
